@@ -29,7 +29,7 @@ class InstagramProvider extends OAuth2Provider
 
     protected function compileScopes()
     {
-        return implode('+', $this->scope);
+        return implode(' ', $this->scope);
     }
 
     protected function parseTokenResponse($response)
